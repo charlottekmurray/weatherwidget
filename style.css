@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Boska Regular";
+  src: url(assets/Boska-Regular.woff2), url(assets/Boska-Regular.woff);
+}
+
+@font-face {
+  font-family: "Boska Medium";
+  src: url(assets/Boska-Medium.woff2), url(assets/Boska-Medium.woff);
+}
+
+@font-face {
+  font-family: "Boska Bold";
+  src: url(assets/Boska-Bold.woff2), url(assets/Boska-Bold.woff);
+}
+
+body {
+    /* vertical and horizontal alignment   */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F2EFE9;
+
+  font-family: "Boska Regular";
+  color: #403933;
+}
+
+main {
+  /* basic styling   */
+  padding: 30px;
+  
+  display: flex;
+ 
+  /* change if you like */
+  text-align: center; 
+  background: #D9C9BA;
+  border-radius: 20px;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding-left: 60px;
+}
+
+
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+.vertical {
+            border-left: 6px solid #E1D1C2;
+  border-radius: 20px;
+            height: 450px;
+/*             position:absolute;
+            left: 50%; */
+  align-self: center;
+  margin: 5px;
+  margin-right: 40px;
+}
+
+data {
+  /* remove or change value to `inline-block`   */
+  display: block;
+}
+
+h1 {
+  font-family: "Boska Bold";
+  font-size:3em;
+  margin;
+}
+
+h2 {
+  font-family: "Boska Medium";
+  font-size: 5em;
+}
+
+h3 {
+  font-family: "Boska Medium";
+}
