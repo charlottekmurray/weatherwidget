@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "Boska Regular";
-  src: url(assets/Boska-Regular.woff2), url(assets/Boska-Regular.woff);
-}
-
-@font-face {
-  font-family: "Boska Medium";
-  src: url(assets/Boska-Medium.woff2), url(assets/Boska-Medium.woff);
-}
-
-@font-face {
-  font-family: "Boska Bold";
-  src: url(assets/Boska-Bold.woff2), url(assets/Boska-Bold.woff);
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
 
 body {
     /* vertical and horizontal alignment   */
@@ -19,43 +6,45 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #F2EFE9;
+ background: rgb(194,224,242);
+background: linear-gradient(188deg, rgba(194,224,242,1) 0%, rgba(66,119,140,1) 100%); 
 
-  font-family: "Boska Regular";
-  color: #403933;
+  font-family: "Switzer Regular";
+  color: #d5e7f1;
 }
 
-main {
+section {
   /* basic styling   */
-  padding: 30px;
+  padding: 30px 60px 30px 55px;
+  margin: 30px;
   
-  display: flex;
- 
+  display: grid;
+  grid-template: 60px 20px 20px 20px 20px/ 30px 300px 1px 124px;
+  gap: 15px;
+  
   /* change if you like */
-  text-align: center; 
-  background: #D9C9BA;
+ 
+background: rgb(1,24,38);
+background: linear-gradient(338deg, rgba(1,24,38,1) 0%, rgba(34,68,89,1) 100%);
   border-radius: 20px;
- box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  padding-left: 60px;
+ box-shadow: 0 3px 10px rgba(66,119,140,.5);
+  
+  transition: scale 0.1s ease;
 }
 
+section:hover {
+  scale: 1.04;
+}
 
 
 div {
   display: flex;
   align-items: center;
+  
+  grid-area: 2 / 2 / span 3 / 2;
 }
 
-.vertical {
-            border-left: 6px solid #E1D1C2;
-  border-radius: 20px;
-            height: 450px;
-/*             position:absolute;
-            left: 50%; */
-  align-self: center;
-  margin: 5px;
-  margin-right: 40px;
-}
+
 
 data {
   /* remove or change value to `inline-block`   */
@@ -63,16 +52,37 @@ data {
 }
 
 h1 {
-  font-family: "Boska Bold";
-  font-size:3em;
-  margin;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size:2.5em;
+  
+  margin: 0;
+  padding: 0;
+  
+ grid-area: 1 / 1 / span 1 / span 2;
 }
 
 h2 {
-  font-family: "Boska Medium";
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
   font-size: 5em;
+  
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
-  font-family: "Boska Medium";
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  
+  padding: 0;
+  margin: 0;
+}
+
+.humidity {
+  grid-area: 2 / 4 / 2 / 4;
+}
+
+.feelslike {
+  grid-area: 3 / 4 / 3 / 4;
 }
